@@ -2,7 +2,7 @@
 
 The Glass Dataset from the UCI Machine Learning Repository was motivated by criminological investigation. Glass found at the scene of a crime can serve as evidence if correctly identified. This study focuses on the classification of seven types of glass. The dataset comprises 10 features/attributes used to determine the glass class. Glass classes are described as follows: Building Windows Float Processed (Class 1), Building Windows Non-Float Processed (Class 2), Vehicle Windows Float Processed (Class 3), Vehicle Windows Non-Float Processed (none in this database), Containers (Class 5), Tableware (Class 6), and Headlamps (Class 7). A 5-Fold cross-validation is employed to evaluate the classification performance of an SVM classifier. Metrics such as the confusion matrix, sensitivity, specificity, overall model accuracy, F1-score, and ROC & AUC curve are calculated to determine how well the model performed.
 
-**Important Note:** There is no Class 4 since 'Vehicle Windows Non-Float Processed' has no instances in this dataset. 
+**Important Note:** There is no Class 4 since 'Vehicle Windows Non-Float Processed' has no instances in this dataset. The initial 'C' value was set to 1 and increased to 100 to enhance model accuracy and prioritize the correct classification of glass, rather than minimizing the hyperplane of the SVM. As a result, model accuracy improved from 86% to 93%.
 
 ## 🛠️ Technologies Used:
 
